@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #2c3e50;
+  color: white;
+  min-height: 100vh;
+  padding: 30px 20px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.main {
+  margin-left: 220px;
+  padding: 40px;
+  flex: 1;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Ubah card menjadi link bergaya kotak */
+.card {
+  text-decoration: none;
+  color: inherit;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 200px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  background-color: #f0f0f0;
+}
+
+.card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
